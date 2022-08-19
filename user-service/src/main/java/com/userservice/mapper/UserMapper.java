@@ -1,12 +1,11 @@
-package userservice.mapper;
+package com.userservice.mapper;
 
+import com.userservice.dto.UserDTO;
 import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Named;
-import org.springframework.stereotype.Component;
-import userservice.dto.UserDTO;
-import userservice.dto.UserRegisterDTO;
-import userservice.entity.User;
+import com.userservice.dto.UserRegisterDTO;
+import com.userservice.entity.User;
 
 import java.util.List;
 @Mapper(componentModel = "spring")

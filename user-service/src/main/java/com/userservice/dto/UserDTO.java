@@ -1,7 +1,7 @@
-package userservice.dto;
+package com.userservice.dto;
 
 import lombok.Data;
-import userservice.enums.Role;
+import com.userservice.enums.Role;
 
 @Data
 public class UserDTO {

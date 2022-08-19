@@ -1,12 +1,12 @@
-package userservice.service;
+package com.userservice.service;
 
+import com.userservice.repository.UserRepository;
 import org.springframework.stereotype.Service;
-import userservice.dto.UserDTO;
-import userservice.dto.UserRegisterDTO;
-import userservice.entity.User;
-import userservice.enums.Role;
-import userservice.mapper.UserMapper;
-import userservice.repository.UserRepository;
+import com.userservice.dto.UserDTO;
+import com.userservice.dto.UserRegisterDTO;
+import com.userservice.entity.User;
+import com.userservice.enums.Role;
+import com.userservice.mapper.UserMapper;
 
 @Service
 public class UserService {

@@ -1,7 +1,7 @@
-package userservice.entity;
+package com.userservice.entity;
 
+import com.userservice.enums.Role;
 import lombok.Data;
-import userservice.enums.Role;
 
 import javax.persistence.*;
 
