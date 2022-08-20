@@ -5,6 +5,9 @@
     <modules>
         <module>user-service</module>
         <module>config-server</module>
+        <module>course-service</module>
+        <module>school-service</module>
+        <module>notification-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
