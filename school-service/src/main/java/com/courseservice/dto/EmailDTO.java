@@ -1,16 +1,12 @@
-package com.notificationservice.dto;
+package com.courseservice.dto;
 
 import lombok.Data;
-import lombok.ToString;
 
 @Data
-@ToString
 public class EmailDTO {
-
     private String sendTo;
 
     private String body;
 
     private String subject;
-
 }
