@@ -9,6 +9,7 @@
         <module>school-service</module>
         <module>notification-service</module>
         <module>eureka-server</module>
+        <module>gateway-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
