@@ -1,7 +1,9 @@
 package com.userservice.entity;
 
 import com.userservice.enums.Role;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 

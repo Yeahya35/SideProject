@@ -1,19 +1,19 @@
 package com.userservice.controller;
 
 import com.userservice.service.UserService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.userservice.dto.UserRegisterDTO;
-
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/main")
 public class UserController {
 
     private final UserService userService;
+
+    @Value("${server.port}")
+    private String port;
 
     public UserController(UserService userService) {
         this.userService = userService;
@@ -22,5 +22,10 @@ public class UserController {
     @PostMapping("/save")
     public ResponseEntity<?> save(@RequestBody UserRegisterDTO userRegisterDTO) {
         return new ResponseEntity<>(userService.save(userRegisterDTO), HttpStatus.CREATED);
+    }
+
+    @GetMapping("/port")
+    public String getPort() {
+        return port;
     }
 }
